@@ -139,6 +139,7 @@ echo "keys/" >> .gitignore
 
 ## 🧑‍💻 Author
 **Devendra Pratap**  
-💻 [GitHub](https://github.com/devendrapratap307/)
-
+Software Developer — Go 
+[![GitHub](https://img.shields.io/badge/GitHub-DevendraPratap-black?logo=github)](https://github.com/devendrapratap307/)  
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-DevendraPratap-blue?logo=linkedin)](https://linkedin.com/in/devendrapratap307/) 
 ---
