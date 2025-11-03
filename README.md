@@ -50,7 +50,7 @@ go-crypto-service/
   ├── aes.key        # Demo key, DO NOT USE IN PRODUCTION
   ├── private.pem    # Dummy RSA key for testing
   └── public.pem
-└── README.md
+
 ```
 
 ---
