@@ -1,0 +1,64 @@
+// syntax = "proto3";
+// package crypto;
+// service CryptoService {
+// rpc Encrypt(EncryptRequest) returns (EncryptResponse);
+// rpc Decrypt(DecryptRequest) returns (DecryptResponse);
+// rpc Sign(SignRequest) returns (SignResponse);
+// rpc Verify(VerifyRequest) returns (VerifyResponse);
+// }
+// message EncryptRequest { string plaintext = 1; }
+// message EncryptResponse { string ciphertext = 1; string nonce = 2; }
+// message DecryptRequest { string ciphertext = 1; string nonce = 2; }
+// message DecryptResponse { string plaintext = 1; }
+// message SignRequest { string message = 1; }
+// message SignResponse { string signature = 1; }
+// message VerifyRequest { string message = 1; string signature = 2; }
+// message VerifyResponse { bool valid = 1; }
+
+syntax = "proto3";
+
+package crypto;
+
+option go_package = "proto/crypto;crypto";
+
+service CryptoService {
+  rpc Encrypt(EncryptRequest) returns (EncryptResponse);
+  rpc Decrypt(DecryptRequest) returns (DecryptResponse);
+  rpc Sign(SignRequest) returns (SignResponse);
+  rpc Verify(VerifyRequest) returns (VerifyResponse);
+}
+
+message EncryptRequest {
+  string plaintext = 1;
+}
+
+message EncryptResponse {
+  string ciphertext = 1;
+  string nonce = 2;
+}
+
+message DecryptRequest {
+  string ciphertext = 1;
+  string nonce = 2;
+}
+
+message DecryptResponse {
+  string plaintext = 1;
+}
+
+message SignRequest {
+  string message = 1;
+}
+
+message SignResponse {
+  string signature = 1;
+}
+
+message VerifyRequest {
+  string message = 1;
+  string signature = 2;
+}
+
+message VerifyResponse {
+  bool valid = 1;
+}
